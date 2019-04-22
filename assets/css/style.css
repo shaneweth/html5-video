@@ -1,0 +1,34 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #ad4c4c;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ad1e1e 0%, #999010 48%,#458ca8 100%);
+    background-size: cover;
+    align-content: center;
+}
+
+.player {
+    max-width: 48em;
+    border: .5em solid rgba(0,0,0,0.2);
+    box-shadow: 0 0 1.5em rgba(0,0,0,0.2);
+    position: relative;
+    font-size: 0;
+    overflow: hidden;
+}
+
+/* Only Fullscreen */
+.player:fullscreen {
+    max-width: none;
+    width: 100%;
+}
+
